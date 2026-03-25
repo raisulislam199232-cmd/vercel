@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Manrope:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "tertiary-dim": "#802d7d",
+              "inverse-on-surface": "#9799c6",
+              "primary": "#0050d4",
+              "on-secondary": "#f3f1ff",
+              "on-tertiary-fixed": "#480049",
+              "surface-container-lowest": "#ffffff",
+              "secondary": "#4850b7",
+              "error-dim": "#9f0519",
+              "on-primary-fixed": "#000000",
+              "on-secondary-fixed-variant": "#3c45ab",
+              "surface-dim": "#cfd1ff",
+              "surface-container-highest": "#d9daff",
+              "secondary-dim": "#3b43aa",
+              "primary-container": "#7b9cff",
+              "surface-container": "#e7e6ff",
+              "on-primary-fixed-variant": "#00266e",
+              "on-error-container": "#570008",
+              "tertiary": "#8e3a8a",
+              "surface-variant": "#d9daff",
+              "on-primary-container": "#001e5a",
+              "secondary-fixed-dim": "#bbbfff",
+              "on-secondary-fixed": "#1c248e",
+              "primary-dim": "#0046bb",
+              "tertiary-fixed-dim": "#ef8fe5",
+              "outline-variant": "#a7aad7",
+              "inverse-primary": "#618bff",
+              "surface-container-high": "#e0e0ff",
+              "primary-fixed-dim": "#658eff",
+              "surface": "#f8f5ff",
+              "outline": "#71749e",
+              "error-container": "#fb5151",
+              "on-surface-variant": "#555881",
+              "background": "#f8f5ff",
+              "secondary-container": "#cbceff",
+              "on-tertiary-fixed-variant": "#711f6f",
+              "surface-container-low": "#f1efff",
+              "on-primary": "#f1f2ff",
+              "tertiary-fixed": "#fe9cf4",
+              "on-error": "#ffefee",
+              "inverse-surface": "#06092f",
+              "on-tertiary": "#ffeef8",
+              "on-secondary-container": "#323aa2",
+              "surface-bright": "#f8f5ff",
+              "on-tertiary-container": "#661466",
+              "secondary-fixed": "#cbceff",
+              "on-surface": "#282b51",
+              "tertiary-container": "#fe9cf4",
+              "surface-tint": "#0050d4",
+              "primary-fixed": "#7b9cff",
+              "error": "#b31b25",
+              "on-background": "#282b51"
+            },
+            fontFamily: {
+              "headline": ["Manrope"],
+              "body": ["Inter"],
+              "label": ["Inter"]
+            },
+            borderRadius: {"DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem"},
+          },
+        },
+      }
+    </script>
+<style>
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-nav {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(24px);
+      }
+      .editorial-shadow {
+        box-shadow: 0px 20px 40px rgba(40, 43, 81, 0.06);
+      }
+      .btn-gradient {
+        background: linear-gradient(135deg, #0050d4 0%, #7b9cff 100%);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background font-body text-on-surface">
+<!-- TopAppBar -->
+<header class="sticky top-0 w-full z-50 glass-nav editorial-shadow">
+<div class="flex justify-between items-center w-full px-6 py-4 max-w-7xl mx-auto">
+<div class="flex items-center gap-4">
+<button class="hover:opacity-80 transition-opacity active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-on-surface">menu</span>
+</button>
+<span class="text-2xl font-black text-slate-900 tracking-tighter font-headline">Luminous Threads</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-blue-600 font-bold font-label" href="#">Shop All</a>
+<a class="text-slate-600 hover:opacity-80 transition-opacity font-label" href="#">Collections</a>
+<a class="text-slate-600 hover:opacity-80 transition-opacity font-label" href="#">Our Story</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="hover:opacity-80 transition-opacity active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-on-surface" data-icon="shopping_bag">shopping_bag</span>
+</button>
+</div>
+</div>
+</header>
+<main>
+<!-- Urgent Banner -->
+<section class="bg-tertiary text-on-tertiary py-3 px-4 text-center">
+<p class="font-label text-sm font-semibold tracking-wide">LIMITED TIME OFFER: GET 20% OFF YOUR FIRST ORDER WITH CODE: LUMINOUS20</p>
+</section>
+<!-- Hero Section -->
+<section class="relative min-h-[751px] flex items-center overflow-hidden bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center relative z-10">
+<div class="space-y-8">
+<h1 class="font-headline text-6xl md:text-8xl font-extrabold tracking-tight leading-[1.1] text-on-surface">
+                        The <span class="text-primary italic">Perfect</span> Fit
+                    </h1>
+<p class="text-lg md:text-xl text-on-surface-variant max-w-lg leading-relaxed">
+                        Meticulously crafted essentials designed for the modern silhouette. Experience the intersection of premium organic cotton and Japanese tailoring.
+                    </p>
+<div class="flex flex-wrap gap-4 pt-4">
+<button class="btn-gradient text-on-primary px-10 py-4 rounded-full font-bold text-lg editorial-shadow hover:scale-[1.02] transition-transform active:scale-95">
+                            Shop Now
+                        </button>
+<button class="bg-surface-container-lowest text-primary px-10 py-4 rounded-full font-bold text-lg hover:bg-surface-container-high transition-colors">
+                            Explore Fabric
+                        </button>
+</div>
+</div>
+<div class="relative group">
+<div class="absolute -inset-4 bg-primary-container/20 rounded-full blur-3xl group-hover:bg-primary-container/30 transition-all duration-700"></div>
+<img alt="Premium cotton shirt" class="relative z-10 w-full aspect-[4/5] object-cover rounded-xl editorial-shadow" data-alt="Close-up of a high-quality white cotton t-shirt worn by a model in soft natural sunlight highlighting fabric texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCMCib7uTLwza_aPLzJcGDcSb4wCHQ0jUW-pvebKQcUdgJM5_9cSeN-cRE5TySCXBRGKxFWkJeJHWha5AvdWFS3zmLzwgCx9m2icBhy4aLfoD6JrP1Pfg-AGPzh2BrAmtW9iojXixgRN3e4D8vtH689XOlw2MIMQJjlzSnq4ENISX3V2AaK4lyhSMdjvevMmyM78dDLxmZNbE2v_glU6bvf5Hey3zd4jcWpUVLUach4DdDh4DsDubWvNJNspaTDXh939YzCPkFvx2pZ"/>
+</div>
+</div>
+</section>
+<!-- Featured Products -->
+<section class="py-24 px-6 bg-surface">
+<div class="max-w-7xl mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div class="space-y-4">
+<span class="text-primary font-bold tracking-widest text-sm uppercase">Curated Collection</span>
+<h2 class="font-headline text-4xl md:text-5xl font-extrabold text-on-surface">Featured Essentials</h2>
+</div>
+<a class="hidden md:flex items-center gap-2 text-primary font-bold border-b-2 border-primary/20 pb-1 hover:border-primary transition-all" href="#">
+                        View All Items <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Product 1 -->
+<div class="group">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest mb-6">
+<img alt="The Essential Tee" class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Studio shot of a minimalist black t-shirt on a neutral grey background with professional lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANJkfMcHR1dGevi-CdYq_cKkbkujOy-yVAB0-gsF7tIlzJDv3VkNdDZogI6kRn0JmEOv1FlH7thgKYdb7NfGA62HMKq6wjtzKYb08-RhHvmc98WcmPW8-EOjhoRchjMjBtvHXFAkOHhyVtq67lgnYhA2yD84l_FTrlUIuEA_dv8a3xKL_9grB3J-mLTUAu6W2PaZnoPqTo5QnOJSW8MJL35vx3Ds03MvfWkf3G4rPcSYdEj4GsKfHTU8lZRLb8T_EcZMF7-8vIR_l9"/>
+<span class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-primary">BESTSELLER</span>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between items-start">
+<h3 class="font-headline font-bold text-xl text-on-surface">The Essential Tee</h3>
+<p class="font-bold text-primary">$48.00</p>
+</div>
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs text-on-surface-variant ml-1">(124)</span>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest mb-6">
+<img alt="The Oversized Crew" class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Heavyweight grey oversized t-shirt laid flat on a clean white surface highlighting premium fabric weight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPpmo74O4YBi4oxVJzCGzpmnO13J85GCeq49XNHIiRIPpp_aBNT3oyuZAGagSy_af8o8isWwlWO7n3VbVgBrUoEWihBVzJsEH903dr-UsZuA5MqHY633cUEYV6ygOXPNiW8jhgBo9v9QrW-DK0mrxdzKywYvs_WRGsyrxzBMvsCb6maRXUo9Yin7WuyKipkg0V5zHzbGj2aUta91nGqaAV_3TWlKhfZSzHBxfBZBhSEfEOPo9FEn2XVIQPov-Ij3_YbxfVBrbIOYNE"/>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between items-start">
+<h3 class="font-headline font-bold text-xl text-on-surface">Oversized Crew</h3>
+<p class="font-bold text-primary">$55.00</p>
+</div>
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="text-xs text-on-surface-variant ml-1">(89)</span>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest mb-6">
+<img alt="The Linen Blend" class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Breathable beige linen t-shirt displayed in a sunlit coastal setting with ocean background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBihe3e373AKZl_-2UGj7ANOdyNihnQOsHwn4kJ2-qjezno1VIhxawIBZtVHD6N2uhoWmxHFrrHyRfaJxpZbXXAxSRC4PPQJg5DcWwulP23q8he9MK8I1Uc19_6NVQCF00oYL77foCDaVr-pAumLqKnm2I8JL14SjAIeMvufeZXPXMM3A2o968jvtbAguEJZ7j6QBh17Kp6G-xFHJr6QxCoyWS2lfIU5MUce1qjhQg4mpVEwBT6Zm-4WLMdWNaSm_8rZyn_bMipHVnI"/>
+<span class="absolute top-4 left-4 bg-tertiary text-on-tertiary px-3 py-1 rounded-full text-xs font-bold">NEW</span>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between items-start">
+<h3 class="font-headline font-bold text-xl text-on-surface">The Linen Blend</h3>
+<p class="font-bold text-primary">$62.00</p>
+</div>
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-xs text-on-surface-variant ml-1">(42)</span>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="group">
+<div class="relative overflow-hidden rounded-xl bg-surface-container-lowest mb-6">
+<img alt="The Graphic Origin" class="w-full aspect-[3/4] object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Navy blue graphic t-shirt with a subtle artistic screen print design in white ink" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8-3HBGXe8W2bb7JOvvChStTrzdOomhXkevswkpKAdNACuuXvNErRz0BZHy5whBZ-Yra8wpVENGsYLH0IwXvz6gkme3kqNvT4sAiCj0YGYh9r7nd_SXE9MTF83PLUDdyDidUn9wIRBvu0fiFzsHIyXBfOzF_AJNtGHAk5dZLQnzvN0jqWFfS2J0uQYcJ7VTWdFzh59bULexqjwjwCZT0nc4tMfIRn8qWytJD9g0ZstDUTmabVRr8ZpKUxqO4Q3OPE6hHoazhjmabJP"/>
+</div>
+<div class="space-y-2">
+<div class="flex justify-between items-start">
+<h3 class="font-headline font-bold text-xl text-on-surface">Graphic Origin</h3>
+<p class="font-bold text-primary">$52.00</p>
+</div>
+<div class="flex items-center gap-1 text-tertiary">
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-sm">star_half</span>
+<span class="text-xs text-on-surface-variant ml-1">(210)</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Choose Us - Bento Layout -->
+<section class="py-24 px-6 bg-surface-container-low">
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-16 space-y-4">
+<h2 class="font-headline text-4xl font-extrabold text-on-surface">Why Choose Luminous</h2>
+<p class="text-on-surface-variant max-w-2xl mx-auto">We don't just sell shirts. We provide the foundational layers for your best self.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 h-full">
+<div class="md:col-span-2 bg-surface-container-lowest p-10 rounded-xl editorial-shadow flex flex-col justify-between">
+<div class="space-y-4">
+<span class="material-symbols-outlined text-primary text-4xl">eco</span>
+<h3 class="font-headline text-2xl font-bold">Uncompromising Quality</h3>
+<p class="text-on-surface-variant leading-relaxed">Our shirts are made from 100% long-staple organic cotton, ensuring a garment that holds its shape wash after wash. No pilling, no fading, just pure comfort.</p>
+</div>
+<img alt="Fabric details" class="mt-8 rounded-xl h-48 w-full object-cover" data-alt="Extreme macro shot of high-quality woven cotton fabric showing the intricate texture and weave pattern" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDaAOmbcWTGT0g1D82RPYRKhdjftUOBbnzly4oakrOvSNFgobDrXF32XYIGLhFAsNgdM9Rc09EOVYa0RXf2ETqr7Zo93L02J9bAo4f5WbqZh4d9_OOZpPpizh1IK5FF4sxpG_UJ8hgeyz-P7GkhS0zAe6cCRoFqW2WatnMigcIfORWlzV71ULLHoo7YuaI5E4ugYmE_afTjFieBgD94zbzSEpGY_N8-Q28HmcCamX3uJabJNN1l4XwlabCKFjS0ju27MqGooonI1cp6"/>
+</div>
+<div class="space-y-6">
+<div class="bg-primary text-on-primary p-8 rounded-xl editorial-shadow h-full">
+<span class="material-symbols-outlined text-4xl mb-4">local_shipping</span>
+<h3 class="font-headline text-2xl font-bold mb-2">Fast Shipping</h3>
+<p class="opacity-90">Orders placed before 2PM ship same day. Global delivery in 3-5 business days.</p>
+</div>
+<div class="bg-secondary-container text-on-secondary-container p-8 rounded-xl editorial-shadow h-full">
+<span class="material-symbols-outlined text-4xl mb-4">restart_alt</span>
+<h3 class="font-headline text-2xl font-bold mb-2">Easy Returns</h3>
+<p class="opacity-90">Not the perfect fit? Return or exchange within 30 days, no questions asked.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials -->
+<section class="py-24 px-6">
+<div class="max-w-7xl mx-auto">
+<div class="flex items-center gap-4 mb-16">
+<div class="h-[2px] w-12 bg-primary"></div>
+<h2 class="font-headline text-3xl font-extrabold text-on-surface">The Community Verdict</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+<div class="space-y-6">
+<div class="relative">
+<span class="text-8xl text-primary/10 absolute -top-10 -left-6 font-serif">“</span>
+<p class="text-lg italic leading-relaxed text-on-surface relative z-10">
+                                Finally, a t-shirt that doesn't lose its shape after two washes. The neckline stays crisp and the fabric feels like silk against the skin.
+                            </p>
+</div>
+<div class="flex items-center gap-4">
+<img alt="Customer avatar" class="w-12 h-12 rounded-full object-cover" data-alt="Professional headshot of a smiling man in a black t-shirt with soft studio lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANJCX-sSQga5x9WngCmR678gqMCLCL14t6CLwLmyoVezqT539a5c09HjS56fY3tSArNGxNCvz9q573fqzeqOeaCWbkIAriu9bvUEdBDkZH9S8t7omAJlwutd7jRmkk8VDL0cqKTKelubDlisea2H2XY4VX06Katjsb7cGW_tW884LDCZBYUsInV7a6pN3NiL4ei_NDawzkg2g6ilcJo-Vxd4sWt8MywWm2QdYL5Mu80RGGt_-851NNpA6bHcvGpN9enucSlm2Z-Qwi"/>
+<div>
+<p class="font-bold text-on-surface">Marcus Chen</p>
+<p class="text-sm text-on-surface-variant">Verified Buyer</p>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<div class="relative">
+<span class="text-8xl text-primary/10 absolute -top-10 -left-6 font-serif">“</span>
+<p class="text-lg italic leading-relaxed text-on-surface relative z-10">
+                                The editorial fit is exactly what I've been looking for. It's modern without being too tight. I bought three more colors immediately.
+                            </p>
+</div>
+<div class="flex items-center gap-4">
+<img alt="Customer avatar" class="w-12 h-12 rounded-full object-cover" data-alt="Candid portrait of a woman with a genuine smile in an outdoor sunlit setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvHCCs3T6HihjKjjdHFS8TIxuMPVY8BOpCuWlRfOVCtX1fwiPhII_JKYGpzqoAuOG4A1zdE7RpcOe6XFq4pXz8FTy2c5W5jL1W_KaQOZLyhpj3Ba3wJ7SPEWaaBJ37yR-3gQfC_opFuzXTxmCrB9iCOFL57lKQYEnmyB2NgGCSPc0MtBpZbvs39JlCS8ph2ROe1kcxiH_xSTydWxISxrrolzcfKM102TOSqOozGy93XxDnLgjGZFoe1hBTLhtHTrB7Ct17_pqAgHry"/>
+<div>
+<p class="font-bold text-on-surface">Elena Rodriguez</p>
+<p class="text-sm text-on-surface-variant">Style Enthusiast</p>
+</div>
+</div>
+</div>
+<div class="space-y-6">
+<div class="relative">
+<span class="text-8xl text-primary/10 absolute -top-10 -left-6 font-serif">“</span>
+<p class="text-lg italic leading-relaxed text-on-surface relative z-10">
+                                Customer service was incredible. I had a size question and they responded within minutes. The shipping was even faster than promised.
+                            </p>
+</div>
+<div class="flex items-center gap-4">
+<img alt="Customer avatar" class="w-12 h-12 rounded-full object-cover" data-alt="Headshot of a confident young man in a clean casual setting with bright natural light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqHnHOSfu6-ZmxzP8JqmQ42Z9LLSt9ngnd7mYf3CHAmCl5Dlbdth8G0bnJnlw5OGEBWzTz2F8EFHjp6zYOd1RuNxgTCouol67Cc6qv16A6FJva3zS0ywoZ3f3zmPCsFEituLd1CrD9vxjhKT443pNbtZZfX6ECGTcH9WJD97adC3qSxO1LllaFLSHNBs5xENpZpcbVKibn00LmbRN-vXFv1mowreZF0-4uQgX0lsD2076R6NYlzi7iqvPpXxtENjqzKRrUE8aLpJbq"/>
+<div>
+<p class="font-bold text-on-surface">James Wilson</p>
+<p class="text-sm text-on-surface-variant">Repeat Customer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter / CTA Section -->
+<section class="py-24 px-6 bg-inverse-surface text-surface">
+<div class="max-w-4xl mx-auto text-center space-y-10">
+<h2 class="font-headline text-5xl font-extrabold tracking-tight">Don't Miss the Next Drop</h2>
+<p class="text-lg text-inverse-on-surface">Join 50,000+ others getting exclusive access to limited runs and seasonal collections.</p>
+<form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+<input class="flex-grow bg-white/10 border-0 rounded-full px-6 py-4 text-white focus:ring-2 focus:ring-primary placeholder:text-white/40" placeholder="Enter your email" type="email"/>
+<button class="bg-primary text-on-primary px-8 py-4 rounded-full font-bold hover:bg-primary-dim transition-colors" type="submit">Join Now</button>
+</form>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full pt-16 pb-8 bg-slate-50 border-t border-slate-200/15">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-8 max-w-7xl mx-auto">
+<div class="space-y-6">
+<span class="text-xl font-bold text-slate-900 font-headline">Luminous Threads</span>
+<p class="text-slate-500 font-body text-sm leading-relaxed">Redefining the standard for daily essentials with a focus on ethical production and timeless design.</p>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-on-surface">Shop</h4>
+<ul class="space-y-2 text-sm text-slate-500">
+<li><a class="hover:text-slate-900 hover:translate-x-1 transition-transform inline-block" href="#">Shop All</a></li>
+<li><a class="hover:text-slate-900 hover:translate-x-1 transition-transform inline-block" href="#">T-Shirts</a></li>
+<li><a class="hover:text-slate-900 hover:translate-x-1 transition-transform inline-block" href="#">Long Sleeves</a></li>
+<li><a class="hover:text-slate-900 hover:translate-x-1 transition-transform inline-block" href="#">Bundles</a></li>
+</ul>
+</div>
+<div class="space-y-4">
+<h4 class="font-bold text-on-surface">Support</h4>
+<ul class="space-y-2 text-sm text-slate-500">
+<li><a class="hover:text-slate-900 hover:translate-x-1 transition-transform inline-block" href="#">Our Story</a></li>
+<li><a class="hover:text-slate-900 hover:translate-x-1 transition-transform inline-block" href="#">Shipping</a></li>
+<li><a class="hover:text-slate-900 hover:translate-x-1 transition-transform inline-block" href="#">Returns</a></li>
+<li><a class="hover:text-slate-900 hover:translate-x-1 transition-transform inline-block" href="#">Privacy</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-bold text-on-surface">Follow Us</h4>
+<div class="flex gap-4">
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">public</span>
+</a>
+<a class="text-slate-400 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">share</span>
+</a>
+</div>
+<div class="pt-4 space-y-4">
+<p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Accepted Payments</p>
+<div class="flex flex-wrap gap-3 opacity-60">
+<span class="material-symbols-outlined">credit_card</span>
+<span class="material-symbols-outlined">account_balance_wallet</span>
+<span class="material-symbols-outlined">payments</span>
+</div>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto px-8 mt-16 pt-8 border-t border-slate-200/10 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-slate-400">
+<p>© 2024 Luminous Threads. All rights reserved.</p>
+<div class="flex gap-6">
+<a class="hover:text-slate-900" href="#">Terms of Service</a>
+<a class="hover:text-slate-900" href="#">Privacy Policy</a>
+<a class="hover:text-slate-900" href="#">Cookie Settings</a>
+</div>
+</div>
+</footer>
+</body></html>
